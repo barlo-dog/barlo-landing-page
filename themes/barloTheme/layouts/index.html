@@ -1,0 +1,100 @@
+{{ define "main" }}
+<div>
+  <div id="home-jumbotron" class="jumbotron container-fluid">
+    <div class="row">
+      <div class="col-md">logo</div>
+    </div>
+      <div class="row top-content">
+        <!-- <h1 class="title">{{ .Site.Title }}</h1> -->
+        <div id="titles" class="col-sm">
+          <div id="tagline">
+            <h1 class="display-2">
+              Find your rescue dog and join our community of dog lovers today.
+            </h1>
+          </div>
+          <div>
+            <h2 id="slogun"><strong>Adopt. Foster. Connect.</strong></h2>
+          </div>
+        </div>
+        <div id="barlo-app" class="col-sm text-center">
+          {{ with .Resources.GetMatch "mobile-app-400xauto.png" }}
+          <img
+            class="img-fluid"
+            src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"
+          />
+          {{ end }}
+        </div>
+      </div>
+        <div class="col-sm-auto offset-sm-1 text-center">
+          <button type="button" class="btn btn-default">
+            <strong>Get early access</strong>
+          </button>
+      </div>
+      
+  </div>
+  <div id="description" class="container-fluid">
+    <div class="row text-center">
+      <div class="col-lg">
+        <div>
+          {{ with .Resources.GetMatch "barlo-img1-300xauto.png" }}
+          <img
+            class="img-fluid"
+            src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"
+          />
+          {{ end }}
+        </div>
+        <strong>Efficiently search and apply for dogs</strong>
+        <ul>
+          <li>
+            One place for rescue dogs across the UK Find your personalised dog
+            match
+          </li>
+          <li>Find your personalised dog match</li>
+          <li>Create a profile and apply for a dog with one click</li>
+          <li>Get alerts when new dog matches are added</li>
+        </ul>
+      </div>
+      <div class="col-lg">
+        <div>
+          {{ with .Resources.GetMatch "barlo-img1-300xauto.png" }}
+          <img
+            class="img-fluid"
+            src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"
+          />
+          {{ end }}
+        </div>
+        <strong>Connect with our community of dog lovers and experts </strong>
+        <ul>
+          <li>Find friends and support</li>
+          <li>Learn everything about becoming a dog owner</li>
+          <li>Join events</li>
+          <li>Stay up to date with volunteer opportunities</li>
+        </ul>
+      </div>
+      <div class="col-lg">
+        <div>
+          {{ with .Resources.GetMatch "barlo-img1-300xauto.png" }}
+          <img
+            class="img-fluid"
+            src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"
+          />
+          {{ end }}
+        </div>
+        <strong>Amplify your reach</strong>
+        <ul>
+          <li>List dogs on Barlo for free</li>
+          <li>
+            Automatic screening of applications leading to better, not more,
+            matches
+          </li>
+          <li>
+            Use our searchable database of adopters and fosters for difficult to
+            rehome dogs
+          </li>
+          <li>Outsource time consuming admin tasks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,62 @@
+#nav-border {
+  background-color: #deeeed;
+}
+
+#home-jumbotron {
+  background-color: #deeeed;
+}
+
+#tagline {
+}
+
+#barlo-app {
+  margin-bottom: -5rem;
+}
+
+#slogun {
+  margin-top: 1rem;
+  font-size: 45px;
+}
+
+#titles {
+  /* margin-left: 50px; */
+}
+
+.btn {
+  margin-bottom: -1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+}
+/* Boostrap Buttons Styling */
+
+.btn-default {
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 50px;
+  background: rgba(108, 88, 179, 0.75);
+  border: 2px rgba(108, 88, 179, 0.75);
+  border-radius: 40px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background: rgba(108, 88, 179, 0.75);
+  border: 2px rgba(108, 89, 179, 0.75);
+}
+
+.top-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#description {
+  margin-top: 10rem;
+  max-width: 90%;
+}
+
+#description ul li {
+  text-align: left;
+}
