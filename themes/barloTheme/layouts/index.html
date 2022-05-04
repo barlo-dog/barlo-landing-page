@@ -1,23 +1,36 @@
 {{ define "main" }}
 <div>
-  <div id="home-jumbotron" class="jumbotron container-fluid">
-    <div class="row">
-      <div class="col-md">logo</div>
-    </div>
+  <div id="home-jumbotron" class="jumbotron container-fluid p-90">
     <div class="row top-content">
-      <!-- <h1 class="title">{{ .Site.Title }}</h1> -->
-      <div id="titles" class="col-sm">
-        <div id="tagline">
-          <h1 class="display-2">
-            Find your rescue dog and join our community of dog lovers today.
-          </h1>
-        </div>
-        <div>
-          <h2 id="slogun"><strong>Adopt. Foster. Connect.</strong></h2>
+      <div class="col-sm">
+        <div id="titles">
+          <div class="row">
+            <div class="col-sm">
+              {{ with .Resources.GetMatch "barlo_logotype_black.svg" }}
+              <img
+                id="barlo-logo"
+                src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"
+              />
+              {{ end }}
+            </div>
+          </div>
+          <div class="row">
+            <div id="slogun-1">SWIPE RIGHT TO MEET <br> YOUR RESCUE DOG TODAY</div>
+          </div>
+          <div id="tagline" class="row">
+            <div class="col-sm">
+              <h1 class="display-2">
+                Find your rescue dog and join our community of dog lovers today.
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <h2 id="slogun-2"><strong>Adopt. Foster. Connect.</strong></h2>
+          </div>
         </div>
       </div>
       <div id="barlo-app" class="col-sm mt-md-n5 text-center">
-        {{ with .Resources.GetMatch "mobile-app-400xauto.png" }}
+        {{ with .Resources.GetMatch "barlo_mobile.png" }}
         <img
           class="img-fluid"
           src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"

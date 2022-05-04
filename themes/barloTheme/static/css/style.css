@@ -4,22 +4,32 @@
 
 #home-jumbotron {
   background-color: #deeeed;
+  font-family: "League Spartan", sans-serif;
+
 }
 
-#tagline {
-}
+/* #tagline {
+  margin-top: 0px;
+} */
 
 #barlo-app {
   /* margin-bottom: -5rem; */
 }
 
-#slogun {
+#slogun-1 {
+  margin-top: 1rem;
+  font-size: 28px;
+  width: 50%;
+  word-wrap: break-word;
+}
+
+#slogun-2 {
   margin-top: 1rem;
   font-size: 45px;
 }
 
-#titles {
-  /* margin-left: 50px; */
+#barlo-logo {
+  height: 80px;
 }
 
 .btn {
@@ -59,13 +69,14 @@
 }
 
 .top-content {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
 }
 
 #description {
   margin-top: 10rem;
   max-width: 90%;
+  font-family: "League Spartan", sans-serif;
 }
 
 #description ul li {
@@ -75,6 +86,7 @@
 #contact-box {
   height: 650px;
   background-color: rgba(253, 235, 233, 1);
+  font-family: "League Spartan", sans-serif;
 }
 
 #contact-text {
