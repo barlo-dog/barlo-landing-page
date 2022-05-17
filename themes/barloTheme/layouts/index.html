@@ -1,60 +1,60 @@
 {{ define "main" }}
 <div id="background">
-  <div id="top-content" class="jumbotron jumbotron-fluid">
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7">
-            <div id="titles">
-              <div class="row">
-                <div class="col-sm">
-                  {{ with .Resources.GetMatch "barlo_logotype_black.svg" }}
-                  <img
-                    id="barlo-logo"
-                    src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"
-                  />
-                  {{ end }}
-                </div>
-              </div>
-              <div class="row">
-                <div id="slogun-1">
-                  <strong>SWIPE RIGHT TO MEET YOUR RESCUE DOG TODAY</strong>
-                </div>
-              </div>
-              <div id="tagline" class="row">
-                <div class="col-sm">
-                  <h1 class="display-2">
-                    Find your rescue dog <br> and join our community <br> of dog lovers
-                    today.
-                  </h1>
-                </div>
-              </div>
-              <div class="row">
-                <h2 id="slogun-2"><strong>Adopt. Foster. Connect.</strong></h2>
+  <div id="top-content" class="container-fluid">
+    <div class="container-sm custom-container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div id="titles" class="row">
+            <div id="barlo-logo" class="col-sm-12">
+              <div>
+                {{ with .Resources.GetMatch "barlo_logotype_black.svg" }}
+                <img
+                  src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"
+                />
+                {{ end }}
               </div>
             </div>
+            <div id="slogun-1" class="col-sm-12">
+              <div>
+                <strong>SWIPE RIGHT TO MEET YOUR RESCUE DOG TODAY</strong>
+              </div>
+            </div>
+            <div id="tagline" class="col-sm-12">
+              <div>
+                <h1 class="display-2">
+                  Find your rescue dog <br />
+                  and join our community <br />
+                  of dog lovers today.
+                </h1>
+              </div>
+            </div>
+            <div id="slogun-2" class="col-sm-12">
+              <h2><strong>Adopt. Foster. Connect.</strong></h2>
+            </div>
           </div>
-          <div id="barlo-app" class="col-sm-5">
-            {{ with .Resources.GetMatch "barlo_mobile.png" }}
-            <img
-              class="img-fluid"
-              src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"
-            />
-            {{ end }}
-          </div>
-          <div class="col-xs">
+        </div>
+        <div id="barlo-app" class="col-sm-5">
+          {{ with .Resources.GetMatch "barlo_mobile.png" }}
+          <img
+            class="img"
+            src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}"
+          />
+          {{ end }}
+        </div>
+        <div class="col-xs">
+          <a href="#contact-box">
             <button type="button" class="btn btn-default">
               <strong>Get early access</strong>
             </button>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
   <div id="description" class="container-fluid">
-    <div class="container">
+    <div class="container-sm custom-container">
       <div class="row text-center">
-        <div class="col-lg barlo-cirle">
+        <div class="col-md barlo-circle">
           <div>
             {{ with .Resources.GetMatch "barlo_circle.png" }}
             <img
@@ -63,7 +63,9 @@
             />
             {{ end }}
           </div>
-          <strong>Efficiently search and apply for dogs</strong>
+          <div class="barlo-circle-text">
+            <strong>Efficiently search and apply for dogs</strong>
+          </div>
           <ul>
             <li>
               One place for rescue dogs across the UK Find your personalised dog
@@ -74,7 +76,7 @@
             <li>Get alerts when new dog matches are added</li>
           </ul>
         </div>
-        <div class="col-lg barlo-cirle">
+        <div class="col-md barlo-circle">
           <div>
             {{ with .Resources.GetMatch "barlo_circle2.png" }}
             <img
@@ -83,7 +85,12 @@
             />
             {{ end }}
           </div>
-          <strong>Connect with our community of dog lovers and experts </strong>
+          <div class="barlo-circle-text">
+            <strong
+              >Connect with our community of dog lovers <br />
+              and experts
+            </strong>
+          </div>
           <ul>
             <li>Find friends and support</li>
             <li>Learn everything about becoming a dog owner</li>
@@ -91,7 +98,7 @@
             <li>Stay up to date with volunteer opportunities</li>
           </ul>
         </div>
-        <div class="col-lg barlo-cirle">
+        <div class="col-md barlo-circle">
           <div>
             {{ with .Resources.GetMatch "barlo_circle3.png" }}
             <img
@@ -100,7 +107,9 @@
             />
             {{ end }}
           </div>
-          <strong>Amplify your reach</strong>
+          <div class="barlo-circle-text">
+            <strong>Amplify your reach</strong>
+          </div>
           <ul>
             <li>List dogs on Barlo for free</li>
             <li>
@@ -118,7 +127,7 @@
     </div>
   </div>
   <div id="contact-box" class="container-fluid">
-    <div class="container">
+    <div class="container-sm custom-container">
       <div class="row h-100">
         <div id="contact-text" class="col-sm align-self-center">
           <h1>Get in touch</h1>
