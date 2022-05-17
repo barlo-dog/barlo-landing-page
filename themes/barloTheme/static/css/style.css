@@ -1,6 +1,6 @@
 /* @media (max-width: 1200px) {
+  max-width: 1200px;
   .container{
-      max-width: 1200px;
   }
 }
 
@@ -10,24 +10,16 @@
   }
 } */
 
-#background {
-  font-family: "League Spartan", sans-serif;
-}
+/* Mobile */
 
-#top-content {
-  background-color: #deeeed;
-  padding: 80px 50px 0px 50px;
-}
+/* Jumbotron Device Orders */
 
-#barlo-app {
-  /* margin-bottom: -5rem; */
-}
+/* .custom-container {
+  margin: 0px 150px 0px 150px;
+} */
 
-#barlo-app img {
-  margin-bottom: -110px;
-  width: 400px; /* you can use % */
-  height: auto;
-  float: right
+#barlo-logo img {
+  height: 80px;
 }
 
 #slogun-1 {
@@ -37,17 +29,21 @@
   color: #93d0d7;
 }
 
-#tagline {
-  margin-top: 5rem;
-}
-
 #slogun-2 {
   margin-top: 1rem;
   font-size: 45px;
 }
 
-#barlo-logo {
-  height: 80px;
+/* Mobile */
+
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-snap-type: y;
+}
+
+#background {
+  font-family: "League Spartan", sans-serif;
 }
 
 .btn {
@@ -91,26 +87,31 @@
   font-family: "League Spartan", sans-serif;
 }
 
-#description ul li {
+#description ul {
   text-align: left;
+  margin-bottom: 50px;
 }
 
-.barlo-cirle img {
+.barlo-circle img {
   width: 170px; /* you can use % */
   height: auto;
+  font-size: 40px;
+}
+
+.barlo-circle strong {
+  font-size: 40px;
+  line-height: 80%;
+}
+
+.barlo-circle ul {
+  font-size: 22px;
 }
 
 #contact-box {
   height: 650px;
   background-color: rgba(253, 235, 233, 1);
   font-family: "League Spartan", sans-serif;
-  padding: 75px 0 0 0
-}
-
-#contact-text {
-  margin: 0 0 100px 50px;
-  line-height: 200%;
-  resize: none;
+  padding: 75px 0 0 0;
 }
 
 .contact-input-box {
@@ -146,8 +147,107 @@
   margin: 100px;
 } */
 
-
 .footer {
   background-color: rgba(253, 235, 233, 1);
   margin: 0 0 0 0;
+}
+
+@media (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+  #top-content {
+    background-color: #deeeed;
+    padding: 0px 0px 0px 0px;
+  }
+
+  #barlo-app img {
+    margin: 40px 0px 40px 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  #tagline {
+    margin-top: 2rem;
+  }
+
+  .barlo-circle-text {
+    margin: 50px 0px 50px 0px;
+  }
+
+  #contact-text {
+    margin: 0 0 50px 0;
+    line-height: 200%;
+    resize: none;
+  }
+  /* Jumbotron Device Orders */
+  /*
+  #barlo-app img {
+    margin-bottom: 0px;
+    width: 100%;
+    order: 1;
+  }
+
+  #barlo-logo img {
+    height: 80px;
+    order: 2;
+  }
+
+  #slogun-1 {
+    margin-top: 1rem;
+    font-size: 28px;
+    word-wrap: break-word;
+    color: #93d0d7;
+    order: 3;
+  }
+
+  #tagline {
+    margin-top: 5rem;
+    order: 4;
+  }
+
+  #slogun-2 {
+    margin-top: 1rem;
+    font-size: 45px;
+    order: 1;
+  } */
+}
+
+/* #barlo-app img {
+  margin-bottom: -110px;
+  width: 78%;
+  height: auto;
+  float: right;
+} */
+
+@media (min-width: 800px) {
+  #barlo-app img {
+    margin-bottom: -110px;
+    width: 78%;
+    height: auto;
+    float: right;
+  }
+
+  #tagline {
+    margin-top: 5rem;
+  }
+
+  #top-content {
+    background-color: #deeeed;
+    padding: 80px 50px 0px 50px;
+  }
+
+  .barlo-circle-text {
+    height: 150px;
+    margin: 20px 0px 20px 0px;
+  }
+
+  #contact-text {
+    margin: 0 0 100px 50px;
+    line-height: 200%;
+    resize: none;
+  }
 }
