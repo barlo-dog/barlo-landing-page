@@ -143,9 +143,10 @@ body {
   padding-bottom: 50px;
 }
 
-/* .curved::form {
-  margin: 100px;
-} */
+.hr-title {
+  color: #b6a7a4;
+  margin-bottom: 50px;
+}
 
 .footer {
   background-color: rgba(253, 235, 233, 1);
@@ -183,45 +184,15 @@ body {
     line-height: 200%;
     resize: none;
   }
-  /* Jumbotron Device Orders */
-  /*
-  #barlo-app img {
-    margin-bottom: 0px;
-    width: 100%;
-    order: 1;
+
+  .charity-headers-desktop {
+    display: none;
   }
 
-  #barlo-logo img {
-    height: 80px;
-    order: 2;
+  .charity-headers-mobile {
+    display: block;
   }
-
-  #slogun-1 {
-    margin-top: 1rem;
-    font-size: 28px;
-    word-wrap: break-word;
-    color: #93d0d7;
-    order: 3;
-  }
-
-  #tagline {
-    margin-top: 5rem;
-    order: 4;
-  }
-
-  #slogun-2 {
-    margin-top: 1rem;
-    font-size: 45px;
-    order: 1;
-  } */
 }
-
-/* #barlo-app img {
-  margin-bottom: -110px;
-  width: 78%;
-  height: auto;
-  float: right;
-} */
 
 @media (min-width: 800px) {
   #barlo-app img {
@@ -241,7 +212,7 @@ body {
   }
 
   .barlo-circle-text {
-    height: 150px;
+    height: 90px;
     margin: 20px 0px 20px 0px;
   }
 
@@ -250,4 +221,22 @@ body {
     line-height: 200%;
     resize: none;
   }
+
+  #contact-text strong {
+    font-size: 4rem;
+  }
+
+  #contact-text p {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .charity-headers-desktop {
+    display: block;
+  }
+
+  .charity-headers-mobile {
+    display: none;
+  }
+
 }
