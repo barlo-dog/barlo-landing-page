@@ -54,6 +54,14 @@
   <div id="description" class="container-fluid">
     <div class="container-sm custom-container">
       <div class="row text-center">
+        <div class="col-md-8 hr-title">
+          <h3>FOR ADOPTERS</h3>
+          <hr />
+        </div>
+        <div class="col-md-4 charity-headers-desktop hr-title">
+          <h3>FOR CHARITIES</h3>
+          <hr />
+        </div>
         <div class="col-md barlo-circle">
           <div>
             {{ with .Resources.GetMatch "barlo_circle.png" }}
@@ -67,10 +75,7 @@
             <strong>Efficiently search and apply for dogs</strong>
           </div>
           <ul>
-            <li>
-              One place for rescue dogs across the UK Find your personalised dog
-              match
-            </li>
+            <li>One place for rescue dogs across the UK</li>
             <li>Find your personalised dog match</li>
             <li>Create a profile and apply for a dog with one click</li>
             <li>Get alerts when new dog matches are added</li>
@@ -86,10 +91,7 @@
             {{ end }}
           </div>
           <div class="barlo-circle-text">
-            <strong
-              >Connect with our community of dog lovers <br />
-              and experts
-            </strong>
+            <strong>Connect with our community </strong>
           </div>
           <ul>
             <li>Find friends and support</li>
@@ -99,6 +101,10 @@
           </ul>
         </div>
         <div class="col-md barlo-circle">
+          <div class="col-md-12 charity-headers-mobile hr-title">
+            <h3>FOR CHARITIES</h3>
+            <hr/>
+          </div>
           <div>
             {{ with .Resources.GetMatch "barlo_circle3.png" }}
             <img
@@ -108,7 +114,10 @@
             {{ end }}
           </div>
           <div class="barlo-circle-text">
-            <strong>Amplify your reach</strong>
+            <strong
+              >Amplify your <br />
+              reach</strong
+            >
           </div>
           <ul>
             <li>List dogs on Barlo for free</li>
@@ -129,9 +138,13 @@
   <div id="contact-box" class="container-fluid">
     <div class="container-sm custom-container">
       <div class="row h-100">
-        <div id="contact-text" class="col-sm align-self-center">
-          <h1>Get in touch</h1>
-          <p>Please contact us about connecting with Barlo</p>
+        <div id="contact-text" class="col-sm">
+          <h1><strong>Get in touch</strong></h1>
+          <p>
+            If you would like to work with Barlo or <br> have any other questions,
+            we'd love to hear from you. <br>
+          </p>
+          <p>Just drop us a line!</p>
         </div>
         <div id="contact-input" class="col-sm align-self-center">
           <div class="curved">
