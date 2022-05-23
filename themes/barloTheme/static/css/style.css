@@ -185,6 +185,10 @@ body {
     resize: none;
   }
 
+  /* #contact-text strong {
+    font-size: 4rem;
+  } */
+
   .charity-headers-desktop {
     display: none;
   }
