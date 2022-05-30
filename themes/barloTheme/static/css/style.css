@@ -161,6 +161,10 @@ body {
     text-align: center;
   }
 
+  #titles {
+    margin-top: 50px;
+  }
+
   #top-content {
     background-color: #deeeed;
     padding: 0px 0px 0px 0px;
