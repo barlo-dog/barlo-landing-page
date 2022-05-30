@@ -36,11 +36,11 @@
 
 /* Mobile */
 
-html,
+/* html,
 body {
   scroll-behavior: smooth;
   scroll-snap-type: y;
-}
+} */
 
 #background {
   font-family: "League Spartan", sans-serif;
