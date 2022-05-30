@@ -36,11 +36,11 @@
 
 /* Mobile */
 
-html,
+/* html,
 body {
   scroll-behavior: smooth;
   scroll-snap-type: y;
-}
+} */
 
 #background {
   font-family: "League Spartan", sans-serif;
@@ -154,10 +154,15 @@ body {
 }
 
 @media (max-width: 800px) {
-  html,
   body {
-    overflow-x: hidden;
+    /* overflow: hidden; */
+    /* overflow: scroll;
+    -webkit-overflow-scrolling: touch; */
     text-align: center;
+  }
+
+  #titles {
+    margin-top: 50px;
   }
 
   #top-content {
