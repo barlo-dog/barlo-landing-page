@@ -156,9 +156,9 @@ body {
 @media (max-width: 800px) {
   html,
   body {
-    /* overflow-x: hidden; */
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    /* overflow: scroll;
+    -webkit-overflow-scrolling: touch; */
     text-align: center;
   }
 
